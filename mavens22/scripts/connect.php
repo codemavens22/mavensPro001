@@ -17,8 +17,10 @@ Example
 
 <h1>Php in html</h1>
 
+
 <?php
 echo "Hello World!";
+echo"hello world";
 ?>
 
 </body>
