@@ -1,25 +1,32 @@
-Basic PHP Syntax
-A PHP script can be placed anywhere in the document.
+<?php 
 
-A PHP script starts with <?php and ends with ?>:
+if (isset($_POST['btn-send'])) {
 
-<?php
-// PHP code goes here
-?>
-The default file extension for PHP files is ".php".
 
-A PHP file normally contains HTML tags, and some PHP scripting code.
-  
-Example
-<!DOCTYPE html>
-<html>
-<body>
 
-<h1>Php in html</h1>
+	$UserName = $_POST['UName'];
+	$Email = $_POST['Email'];
+	$subject = $_POST['Subject'];
+	$Msg = $_POST['msg'];
 
-<?php
-echo "Hello World!";
-?>
+	if (empty($UserName) || empty($Email) || empty($subject) || empty($Msg)) {
 
-</body>
-</html>
+		header('location: pages/contactus.php?error');
+		
+	}
+	else
+	{
+		$to = "codemavens22@gmail.com";
+
+		if (mail($to, $subject, $Msg,$Email)) {
+
+			header('location: pages/contacus.php?success');
+		}
+
+	}
+
+}
+
+
+
+ ?>
