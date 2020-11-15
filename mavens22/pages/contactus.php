@@ -97,7 +97,7 @@
   <div class="row text-center padding">
     <div class="col-12">
 		
-	  <h4 style="font-size:70%" class="display-4">HER ARE OTHER WAYS TO CONTACT WITH US  </h4>
+	  <h4 style="font-size:70%" class="display-4">HERE ARE OTHER WAYS TO CONTACT WITH US  </h4>
 	 
     </div>
     <div class="col-12 social padding">
