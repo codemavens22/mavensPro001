@@ -38,6 +38,30 @@
 .gif{
 	max-width:80%;
 }
-
-
+.welcome{
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.weclcome hr {
+  border-top: 2px solid #b4b4b4;
+  width:95% ;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+.fa-code {
+  color: #e5d426;
+}
+.fa-bold{
+  color:#563d7c;
+}
+.fa-laravel {
+  color: #F05340;
+}
+.fa-css3 {
+  color: #2163af;
+}
+.fa-code,.fa-bold,.fa-css3,.fa-laravel,.fa-spinner, .fa-cog {
+font-size: 4em;;
+}
   
