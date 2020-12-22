@@ -11,7 +11,7 @@ if (isset($_POST['btn-send'])) {
 
 	if (empty($UserName) || empty($Email) || empty($subject) || empty($Msg)) {
 
-		header('location: pages/contactus.php?error');
+		header('Location: contactus.php?error');
 		
 	}
 	else
@@ -20,7 +20,7 @@ if (isset($_POST['btn-send'])) {
 
 		if (mail($to, $subject, $Msg,$Email)) {
 
-			header('location: pages/contacus.php?success');
+			header('Location: contacus.php?success');
 		}
 
 	}
